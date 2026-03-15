@@ -15,7 +15,7 @@
             padding-bottom:20px;
             }
 h1{
-    color:darkslategrey;
+    color:darkslategrey !important;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 70px;
     padding-left: 300px;
@@ -79,7 +79,7 @@ button{
     box-shadow: 5px 5px;
 
 }
-.ai{
+p.ai{
     font-family: 'Times New Roman', Times, serif;
     color:darkblue;
     background-color:ghostwhite;
@@ -94,4 +94,26 @@ button{
     margin-left: 700px;
     margin-top: 20px;
     box-shadow: 5px 5px;
+}
+p.tina{
+    box-shadow: 10px 10px;
+}
+
+.hello{
+    background-color:darkgreen;
+    width:700px;
+    height:200px;
+    overflow:scroll;
+    color:azure;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.hi{
+    font-size: 25px;
+    color:brown;
+}
+img{
+    float:right;
+    margin-left:15px;
 }

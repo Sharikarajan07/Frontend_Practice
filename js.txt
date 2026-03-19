@@ -1,4 +1,4 @@
-//arraymethods
+// //arraymethods
 
 let a= ["sharika", "padhmapriya", "kavitha", "aishwariya", "lux", "swarna","nividhitha", "vibe"]
 
@@ -69,13 +69,13 @@ let data= a.map((name) =>{
 })
 console.log(data);
 
-filter
+//filter
 let da = a.filter((name) =>{
     return name.length>8
 })
 console.log(da)
 
-find
+//find
 let dat = a.find((name) =>{
     return name.length>8
 })

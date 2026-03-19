@@ -1,3 +1,86 @@
+// //arraymethods
+
+let a= ["sharika", "padhmapriya", "kavitha", "aishwariya", "lux", "swarna","nividhitha", "vibe"]
+
+a.push("desika")
+console.log(a)
+
+a.pop()
+console.log(a)
+
+a.shift()
+console.log(a)
+
+a.unshift("amu")
+console.log(a)
+
+//es6-ecmascript
+
+var b= 12 
+b=7
+var b=9
+console.log(b)
+
+let s=7 //let can only assign and reassign not redeclare
+s=9
+console.log(s)
+
+const g=5 //const can only not reassign or redeclare as it is constant
+console.log(g)
+
+// arrow function
+
+
+const add = (a, b) => a + b;
+
+console.log(add(20,10));
+
+function add(a,b){
+    return a+b
+}
+console.log(add(20,40));
+
+//loop
+
+for(let i=0; i<=10; i++){
+    console.log(i);
+}
+
+for (let i=0; i<a.length; i++){
+    console.log(a[i]);
+}
+//for of 
+for(let i of a){
+    console.log(i);
+}
+
+//for each 
+a.forEach((r) =>{
+    console.log(r);
+})
+
+//map 
+a.map((name) => {
+    console.log(name);
+})
+
+let data= a.map((name) =>{
+    return name+8
+})
+console.log(data);
+
+//filter
+let da = a.filter((name) =>{
+    return name.length>8
+})
+console.log(da)
+
+//find
+let dat = a.find((name) =>{
+    return name.length>8
+})
+console.log(dat)
+
 
 //slice and splice
 
@@ -45,7 +128,7 @@ one(two)
 
 //promise
 
-let s = fetch("https://fakestoreapi.com/products/1")
+let d = fetch("https://fakestoreapi.com/products/1")
 .then((da) => {
     return da.json()
 })
@@ -70,4 +153,17 @@ const handlefetch = async () =>{
 }
 handlefetch()
 
+const han = async () =>{
+    let data1 = await fetch("https://fakestoreapi.com/products/1")
+    let res1 = await data1.json()
+    console.log(res1);
+}
+han()
+
+const handle = async() =>{
+    let data2 = await fetch("https://fake.jsonmockapi.com/users/1")
+    let res2 = await data2.json()
+    console.log(res2);
+}
+handle()
 

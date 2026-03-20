@@ -25,8 +25,8 @@ let s=7 //let can only assign and reassign not redeclare
 s=9
 console.log(s)
 
-const g=5 //const can only not reassign or redeclare as it is constant
-console.log(g)
+const l=5 //const can only not reassign or redeclare as it is constant
+console.log(l)
 
 // arrow function
 
@@ -167,3 +167,58 @@ const handle = async() =>{
 }
 handle()
 
+//call by value and call by reference
+let k=10
+let b=k
+b=14
+console.log(k,b)
+
+let f={name:"arun",age: 25}
+let b=f
+b.age=26
+console.log(f,b)
+
+//shallow copy
+let b={...a}
+b.age=26
+console.log(a,b)
+
+let c={name:"sharika",age:21,add:{state:"tn",location:"chennai"}}
+let h={...c}
+h.add.location="kpm"
+console.log(c,h)
+
+//deep copy
+let h= structuredClone(c)
+h.add.location="kpm"
+console.log(c,h)
+
+//setTimeout
+
+console.log(1)
+setTimeout(() =>{
+    console.log(2);
+},1000)
+console.log(3)
+
+//SCOPE
+//Global scope
+var g=12
+function show(){
+    console.log(g,"fun g");
+}
+show()
+console.log(g,"normal g")
+
+//function scope
+function display(){
+    let a=12
+    console.log(a,"fun inside")
+}
+display()
+console.log(a,"fun outside")
+
+//hositing
+console.log(j)
+
+var j=12

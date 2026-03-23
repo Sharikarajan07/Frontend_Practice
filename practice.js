@@ -222,3 +222,11 @@ console.log(a,"fun outside")
 console.log(j)
 
 var j=12
+
+//update in DOM
+
+document.getElementById("kavitha").innerText="Rajan"
+
+function changename(){
+    document.getElementById("kavitha").innerText="Rajan"
+}

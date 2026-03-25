@@ -107,12 +107,56 @@ box.addEventListener("mousemove",function(){
 //focus-when window becomes active
 //blur-when window loses focus
 
-let window = document.getElementById("scroll");
+
 window.addEventListener("scroll",function(){
-    window.textContent="scrolling the page.....";
+    document.getElementById("output").textContent="scrolling the page.....";
 });
 
 //3.form event-event happens when user interact with forms
+//submit-triggered when form is submitted
+
+let form = document.getElementById("form");
+form.addEventListener("submit", function(d){
+     d.preventDefault();
+     alert("form submitted");
+});
+//change-triggered when value is changed 
+//input-when everytime user gives a input
+//focus-when input selected
+//blur-when input loses focus
+//reset-when form is reset
+//select-when text is selected
+
+//4.Keyboard event- event happens when user presses or releases a key
+//keydown-triggered when a key is pressed
+//keyup-when a key releases
+//keypress-when key produces a character(old)
+
+document.addEventListener("keydown", function(event) {
+  document.getElementById("out").innerText =
+    "Key pressed: " + event.key;
+});
+
+//5.Clipboard events
+// cut- triggered when user cuts a text
+// copy- when user copies a text
+// paste- when user paste a text
+
+let clip= document.getElementById("clip");
+clip.addEventListener("copy",function(d){
+    d.preventDefault();
+    document.getElementById("output").innerText="Copy not allowed";
+});
+clip.addEventListener("cut",function(){
+    document.getElementById("output").innerText="Text Cut!!";
+});
+clip.addEventListener("paste",function(event){
+    let pastedtext= event.clipboardData.getData("Text");
+    document.getElementById("output").innerText="Text pasted!! Pasted Text:" +pastedtext;
+});
+
+
+
 
 
 
